@@ -7,10 +7,14 @@ window.onload = function(){
 </head-->
 <head>
     <script>
-    window.onload = function(){
-        if(location.href.indexOf("?t=") == -1)
-            location.href = "https://shadownineteen.github.io?t="+((new Date().getTime()).toString());
-    }
+    window.addEventListener("load",function()
+        {
+            if(location.href.indexOf("?t=") == -1){
+                alert(1);
+                location.href = "https://shadownineteen.github.io?t="+((new Date().getTime()).toString());
+            }
+        }
+    );
     </script>
     <META http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Lorule chat group - </title>
