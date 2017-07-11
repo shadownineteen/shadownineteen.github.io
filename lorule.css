@@ -1,0 +1,153 @@
+html{
+    cursor: default !important;
+}
+body {
+    background: url(//xat.com/images/logow.svg)no-repeat 0 0, url(//s20.postimg.org/57lalogsd/Lorule.jpg) no-repeat 0 100%/cover fixed;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+div#chat{
+    position: absolute;
+    width: calc(728px + 32px);
+    height: 486px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+div#chat > div.app:first-of-type{
+    box-shadow: inset 0 1px 0 #000, inset 0 -1px 0 #000, inset -1px 0 #000;
+    border-radius: 0px 8px 0px 0px;
+    top: 0;
+}
+div#chat > div.app:last-of-type{
+    border-radius: 0px 0px 8px 0px;
+}
+div#chat span{
+    border-radius: 16px 0px 16px 16px;
+    overflow: hidden;
+    display: inline-block;
+    /*background: linear-gradient(50deg,#000028, #000048, #00009C);*/
+    box-shadow: inset 0 1px 0 #000, inset 0 -1px 0 #000, inset -1px 0 0 #000, inset 1px 0 0 #000;
+}
+div[name^=ui]{
+    position: absolute;
+    display: inline-block;
+    padding: 20px;
+    background: rgba(0, 0, 0, .7);
+    border-radius: 16px;
+    box-shadow: 0 0 5px #000;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+div[name^=ui] *{
+    box-shadow:inset 0 0 3px #000;
+}
+div#uicloser{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: -4px;
+    top: -4px;
+    background: url(//s20.postimg.org/52l9mg1kt/close-icon.png) no-repeat 50% 50% / 24px;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+    box-shadow: none !important;
+    cursor: pointer;
+}
+div[name^=ui]:hover > div#uicloser{
+    opacity: 1;
+    pointer-events: all;
+}
+div.dragging{
+    background: rgba(0, 0, 120, .7);
+    cursor: move !important;
+}
+div.app{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 728px;
+    background: linear-gradient(to left,#111, rgba(49, 49, 49, .75), rgba(86, 86, 86, .45));
+    box-shadow: inset 0 -1px 0 #000, inset -1px 0 0 #000;
+    transition: .2s;
+    cursor: pointer;
+}
+div.app:hover{
+    box-shadow: inset 0 -1px 0 #000, inset -1px 0 0 #000, inset -16px 0 0 rgba(255, 255, 255, .1);
+}
+div#chat > div.app:first-of-type:hover{
+    box-shadow: inset 0 1px 0 #000, inset 0 -1px 0 #000, inset -16px 0 0 rgba(255, 255, 255, .1);
+}
+div[class=app][id=grid]{
+    /* Icon created by http://www.freepik.com */
+    background: url(//s20.postimg.org/lmdwbkkjh/man-user.png) no-repeat 50% 50% / 16px, linear-gradient(to left,#111, rgba(49, 49, 49, .75), rgba(86, 86, 86, .45));
+}
+div[class=app][id=youtube]{
+    /* Icon created by http://www.flaticon.com/authors/hadrien */
+    background: url(//s20.postimg.org/lzacev94t/youtube.png) no-repeat 50% 50% / 16px, linear-gradient(to left,#111, rgba(49, 49, 49, .75), rgba(86, 86, 86, .45));
+}
+div[class=app][id=doodle]{
+    /* Icon created by http://www.freepik.com */
+    background: url(//s20.postimg.org/sw4ire5fh/draw-a-picture.png) no-repeat 50% 50% / 16px, linear-gradient(to left,#111, rgba(49, 49, 49, .75), rgba(86, 86, 86, .45));
+}
+div[class=app][id=translate]{
+    /* Icon created by http://www.freepik.com */
+    background: url(//s20.postimg.org/5tdzs83y5/characters-interface-sign.png) no-repeat 50% 50% / 16px, linear-gradient(to left,#111, rgba(49, 49, 49, .75), rgba(86, 86, 86, .45));
+}
+div[class=app][id=trade]{
+    /* Icon created by http://www.freepik.com */
+    background: url(//s20.postimg.org/9s65dxm9p/deal.png) no-repeat 50% 50% / 16px, linear-gradient(to left,#111, rgba(49, 49, 49, .75), rgba(86, 86, 86, .45));
+}
+div[class=app][id=smilies]{
+    /* Icon created by http://www.freepik.com */
+    background: url(//s20.postimg.org/wne3dpj3x/smile.png) no-repeat 50% 50% / 16px, linear-gradient(to left,#111, rgba(49, 49, 49, .75), rgba(86, 86, 86, .45));
+}
+div[class=app][id=edit]{
+    /* Icon created by http://www.freepik.com */
+    background: url(//s20.postimg.org/aiyvjpon1/edit.png) no-repeat 50% 50% / 16px, linear-gradient(to left,#111, rgba(49, 49, 49, .75), rgba(86, 86, 86, .45));
+}
+div[class=app][id=events]{
+    /* Icon created by http://www.freepik.com */
+    background: url(//s20.postimg.org/n7t63durh/calendar.png) no-repeat 50% 50% / 16px, linear-gradient(to left,#111, rgba(49, 49, 49, .75), rgba(86, 86, 86, .45));
+}
+div[class=app][id=feedback]{
+    /* Icon created by http://www.freepik.com */
+    background: url(//s20.postimg.org/tduma4oot/email.png) no-repeat 50% 50% / 16px, linear-gradient(to left,#111, rgba(49, 49, 49, .75), rgba(86, 86, 86, .45));
+}
+div[class=app][id=innap]{
+    /* Icon created by http://www.freepik.com */
+    background: url(//s20.postimg.org/r0hqg8gl9/disabled.png) no-repeat 50% 50% / 16px, linear-gradient(to left,#111, rgba(49, 49, 49, .75), rgba(86, 86, 86, .45));
+}
+div[class=app][id=info]{
+    /* Icon created by http://www.freepik.com */
+    background: url(//s20.postimg.org/wjf80c7b1/info.png) no-repeat 50% 50% / 16px, linear-gradient(to left,#111, rgba(49, 49, 49, .75), rgba(86, 86, 86, .45));
+}
+div#media:empty{
+    display: none;
+}
+/* 878 */
+@media screen and (max-width: 900px){
+    div#chat{
+        position: absolute;
+        left: 0;
+        top: 50px;
+        transform: translate(0px, 0px);
+    }
+}
+/* 536 */
+@media screen and (max-height: 586px){
+    div#chat{
+        position: absolute;
+        left: 150px;
+        top: 0;
+        transform: translate(0px, 0px);
+    }
+}
