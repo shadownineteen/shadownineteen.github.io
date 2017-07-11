@@ -6,6 +6,12 @@ window.onload = function(){
 </script>
 </head-->
 <head>
+    <script>
+    window.onload = function(){
+        if(location.href.indexOf("?t=") == -1)
+            location.href = "https://shadownineteen.github.io?t="+((new Date().getTime()).toString());
+    }
+    </script>
     <META http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Lorule chat group - </title>
     <link rel="SHORTCUT ICON" href="//xat.com/web_gear/chat/icon.ico" />
