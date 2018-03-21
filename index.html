@@ -1,6 +1,25 @@
 <head>
     <script>
-        console.log(document.referrer, location.href.substring(location.href.indexOf("?")+1));
+        function paramsToObj(){
+            var cmds = location.href.toLowerCase().substring(location.href.indexOf("?")+1).split("&");
+            var obj = {}
+            for(var i=0;cmds.length>i;i++){
+                var a = cmds[i].split("=",2);
+                obj[a[0]] = a[1];
+            }
+            return obj;
+        }
+        
+        window.addEventListener("load", function(){
+            if(location.href.indexOf("?") <= -1) return;
+            var info = paramsToObj();
+            switch(info["id"]){
+                case 176999535:
+                    alert("Testing 123.. for chat id: " + info["id"]);
+                case default:
+                    break;
+            }
+        }, false);
     </script>
 </head>
 <body>
