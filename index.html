@@ -12,6 +12,10 @@
         
         window.addEventListener("load", function(){
             if(location.href.indexOf("?") <= -1) return;
+            if(location.href.indexOf("z") <= -1){
+                location.href += ("&z=" + ((new Date()).getTime()));
+                return;
+            };
             var info = paramsToObj();
             switch(info["id"]){
                 case "176999535":
