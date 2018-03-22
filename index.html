@@ -20,7 +20,14 @@
             var info = paramsToObj();
             switch(info["id"]){
                 case "176999535":
-                    console.log("Testing " + info["id"] + "...");
+                    //console.log("Testing " + info["id"] + "...");
+                    var a = document.createElement("div");
+                    a.style.backgroundColor = "red";
+                    a.style.height = "100%";
+                    a.style.width = "1px";
+                    a.style.position = "absolute";
+                    a.style.left = "calc(50% - 1px)";
+                    a.style.top = "0";
                     break;
             }
             window.history.pushState('/', '/', '/');
