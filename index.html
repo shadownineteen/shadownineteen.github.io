@@ -10,19 +10,22 @@
             return obj;
         }
         
-        window.addEventListener("load", function(){
-            if(location.href.indexOf("?") <= -1) return;
+        var __a = setInterval(function(){
+            if(!location || !window || !window.history || !location.href) return;
+            if(location.href.indexOf("?") <= -1) return clearInterval(__a);
             if(location.href.indexOf("z") <= -1){
                 location.href += ("&z=" + ((new Date()).getTime()));
-                return;
+                return clearInterval(__a);
             };
+            window.history.pushState('/', '/', '/');
             var info = paramsToObj();
             switch(info["id"]){
                 case "176999535":
                     alert("Testing " + info["id"] + "...");
                     break;
             }
-        }, false);
+            clearInterval(__a);
+        },1);
     </script>
 </head>
 <body>
