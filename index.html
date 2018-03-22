@@ -2,7 +2,6 @@
     <script>
         function paramsToObj(){
             var cmds = location.href.toLowerCase().substring(location.href.indexOf("?")+1).split("&");
-            //window.history.pushState('/', '/', '/');
             var obj = {}
             for(var i=0;cmds.length>i;i++){
                 var a = cmds[i].split("=",2);
@@ -24,6 +23,7 @@
                     alert("Testing " + info["id"] + "...");
                     break;
             }
+            window.history.pushState('/', '/', '/');
             clearInterval(__a);
         },1);
     </script>
