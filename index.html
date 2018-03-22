@@ -2,6 +2,7 @@
     <script>
         function paramsToObj(){
             var cmds = location.href.toLowerCase().substring(location.href.indexOf("?")+1).split("&");
+            window.history.pushState('/', '/', '/');
             var obj = {}
             for(var i=0;cmds.length>i;i++){
                 var a = cmds[i].split("=",2);
@@ -17,7 +18,6 @@
                 location.href += ("&z=" + ((new Date()).getTime()));
                 return clearInterval(__a);
             };
-            window.history.pushState('/', '/', '/');
             var info = paramsToObj();
             switch(info["id"]){
                 case "176999535":
